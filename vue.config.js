@@ -38,18 +38,26 @@ const vueConfig = {
 
     // https: true,
     port: 8000,
-    // proxy: {
-    //   //配置跨域
-    //   '/api': {
-    //     target: 'http://api.xxxx.com', // 后台接口域名
-    //     ws: false, //如果要代理 websockets，配置这个参数
-    //     secure: false, // 如果是https接口，需要配置这个参数
-    //     changeOrigin: true, //是否跨域
-    //     pathRewrite: {
-    //       '^/api': '/api',
-    //     },
-    //   },
-    // },
+    proxy: {
+      //配置跨域
+      '/api': {
+        target: 'http://127.0.0.1:9503', // 后台接口域名
+        ws: false, //如果要代理 websockets，配置这个参数
+        secure: false, // 如果是https接口，需要配置这个参数
+        changeOrigin: true, //是否跨域
+        pathRewrite: {
+          '^/api': '/api',
+        },
+        '/ws': {
+          target: 'http://127.0.0.1:9504',
+          ws: true,
+          changeOrigin: true,
+          pathRewrite: {
+            '^/ws': '',
+          }
+        }
+      },
+    },
   },
   configureWebpack: {
     // webpack plugins

@@ -96,7 +96,7 @@ export default {
       }).then(res => {
         if (res.code == 200) {
           this.status = 1
-          this.items = res.data.rows
+          this.items = res.data.items
         }
       })
     },

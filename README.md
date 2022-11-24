@@ -74,18 +74,3 @@ server {
     }
 }
 ```
-
-注意：项目需要与后端一起使用，[点击获取源码](https://github.com/gzydong/hyperf-chat)。
-
-### 项目源码
-|代码仓库|前端源码|后端源码|
-|-|-|-|
-|Github|https://github.com/gzydong/LumenIM|https://github.com/gzydong/hyperf-chat|
-|码云|https://gitee.com/gzydong/LumenIM|https://gitee.com/gzydong/hyperf-chat|
-
-
-#### 联系方式
-QQ作者 : 837215079
-QQ技术交流群 : 513037553
-
-### 如果你觉得还不错，请 Star , Fork 给作者鼓励一下。

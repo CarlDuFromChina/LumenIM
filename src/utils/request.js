@@ -1,14 +1,10 @@
 import axios from 'axios'
-import config from '@/config/config'
 import { getToken, removeAll } from '@/utils/auth'
 
 import { Notification } from 'element-ui'
 
 // 创建 axios 实例
 const request = axios.create({
-  // API 请求的默认前缀
-  baseURL: config.BASE_API_URL,
-
   // 请求超时时间
   timeout: 20000,
 })

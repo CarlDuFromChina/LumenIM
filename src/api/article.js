@@ -127,11 +127,10 @@ export const ServeGetRecoverAnnexList = () => {
 
 // 下载笔记附件服务接口
 export const ServeDownloadAnnex = annex_id => {
-  let api = config.BASE_API_URL
   try {
     let link = document.createElement('a')
     link.target = "_blank"
-    link.href = `${api}/api/v1/note/annex/download?annex_id=${annex_id}&token=${getToken()}`
+    link.href = `/api/v1/note/annex/download?annex_id=${annex_id}&token=${getToken()}`
     link.click()
   } catch (e) {
     console.error(e)
